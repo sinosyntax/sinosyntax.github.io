@@ -1,0 +1,37 @@
+nav ul {
+    list-style: none;
+    padding: 10px 10px 10px 10px; 
+    text-align: right;
+    border-bottom: 2px solid black;
+}
+
+nav ul li {
+    display: inline;
+    border: none;
+    text-decoration: underline;
+    width: 150px;
+    margin-top: 0;
+    margin-right: 90px; 
+    }
+    
+nav ul li a {
+    font-weight: bold;
+    color: blue; }
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    background-color: blue;
+}
+
+nav ul li:hover > ul {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  nav ul ul li {
+    display: block;
+  }
+
