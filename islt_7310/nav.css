@@ -1,9 +1,9 @@
-#nav_menu ul {
+ul {
     list-style-type: none;
     padding: 10px 10px;
     text-align: right;
     border-bottom: 2px solid black; }
-ul li 
+ul li {
     display: inline;
     padding: 10px; 
     margin-right: 90px; }
