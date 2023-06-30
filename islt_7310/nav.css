@@ -1,12 +1,19 @@
 ul {
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 10px 10px 10px 10px; 
     text-align: right;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid black;
+}
+
 ul li {
     display: inline;
-    padding: 10px; 
-    margin-right: 90px; }
+    border: none;
+    text-decoration: underline;
+    width: 150px;
+    margin-top: 0;
+    margin-right: 90px; 
+    }
+    
 ul li a {
     font-weight: bold;
     color: blue; }
