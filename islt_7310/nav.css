@@ -1,0 +1,12 @@
+#nav_menu ul {
+    list-style-type: none;
+    padding: 10px 10px;
+    text-align: right;
+    border-bottom: 2px solid black; }
+#nav_menu ul li {
+    display: inline;
+    padding: 10px; 
+    margin-right: 90px; }
+#nav_menu ul li a {
+    font-weight: bold;
+    color: blue; }
