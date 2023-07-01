@@ -1,37 +1,40 @@
 nav ul {
     list-style: none;
-    padding: 10px 10px 10px 10px; 
+    position: relative;
     text-align: right;
+    padding: 10px 10px 10px 10px;
     border-bottom: 2px solid black;
 }
 
 nav ul li {
-    display: inline;
-    border: none;
+    display: inline-block;
     text-decoration: underline;
-    width: 150px;
-    margin-top: 0;
-    margin-right: 90px; 
+    margin-top: 0px;
+    margin-right: 90px;   
     }
     
 nav ul li a {
     font-weight: bold;
-    color: blue; }
+    color: blue; 
+    padding: 0px 0px 10px 0px;
+    }
 
 nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0; 
-    background-color: blue;
+    border-bottom: none;
+    color: blue;
+    background-color: lightgoldenrodyellow;
 }
 
-nav ul li:hover > ul {
-    font-weight: bold;
-    color: blue;
-  }
-  
-  nav ul ul li {
+nav ul ul li {
     display: block;
+      }
+
+nav ul li:hover > ul {
+    display: block;
+    font-weight: bold;
   }
+
 
