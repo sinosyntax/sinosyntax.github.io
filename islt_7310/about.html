@@ -18,28 +18,22 @@ Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
 
 ******************************************************************************
 -->
-   
-    
     <meta charset="utf-8">
     <meta name="description" content="About Me">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <title>About Me</title>
-    <style>
-        * {margin: 0; padding: 0;}
-        header: {border-bottom: none;}
-        nav {border-bottom: 1px solid black;}
-        main {float: left; width: 102%;}
-        footer {border-top: 1px solid black; clear: both;}
-        figure {float: left; max-width: 10%; margin: 20px 20px;}
-   
-    </style>
-
 </head>
+
 <body>
     <main>
     <nav>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>          
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -54,6 +48,8 @@ Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
             <li><a href=#contact.html>Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="header-container">
     <figure>
         <img src="aboutmephoto.png" alt="About Me Image">
     </figure>
@@ -62,30 +58,25 @@ Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
     <header>
         <h1>About Me</h1>
     </header> 
+    </div>
 
-        <section>
-    <p>Growing up in the California Bay Area, I had the privilege of growing up in a multiethnic 
-        learning environment, where I gained invaluable exposure to diverse cultures and values. My early love 
-        for music and the humanities blossomed into a deep appreciation for arts education and further shaped my 
-        understanding of the world around me.</p>
+    <section>
+    <p>Take a moment to learn a bit more about me, including my interests, career progression, and the experiences that continue to inspire me.</p>
+    </section>
+    <section>
+    <p>Growing up in California's culturally diverse Bay Area, I was fortunate to be surrounded by a myriad of cultures and values. A budding interest in music and the humanities quickly grew, broadening my worldview and instilling in me a deep appreciation for arts education.
+    </p>
         </section>
         <section>
-    <p>These early experiences instilled in me a lifetime commitment to 
-        education, which I cultivated as a first-generation college student of <em>East Asian Studies</em>, focusing on
-        China. This and other studies in literature and music set the foundation for a twenty-year 
-        career exploring various professional roles across Silicon Valley and Asia, including a decade in Shanghai 
-        working for architecture and environ-mental companies in marketing and communications roles.</p>
+    <p>This exposure sparked a lifelong passion for learning, which inspired me to become the first in my family to attend college. My focus was on East Asian Studies, particularly China, supplemented by explorations into literature and music. These studies served as a springboard for a dynamic, two-decade career that took me from Silicon Valley to Asia. My decade-long stint in Shanghai was particularly impactful, where I leveraged my skills in marketing and communications for architectural and environmental firms.</p>
         </section>
         <section>
-    <p>Today, I have a great interest in <strong>instructional design</strong> and related areas, as well as a 
-        passion for cross-cultural training, adaptive learning, and sustainable design. I am currently enrolled 
-        in the Masters of Science program in <em>Learning Technologies and Design</em> at the University of Missouri,
-        Columbia, which I expect to complete in December 2024.</p>
-        </section>
-
-        <section>
+    <p>Now, my professional interests have evolved towards instructional design and associated fields. I have a growing passion for cross-cultural training, innovative adaptive learning methodologies, and the promotion of sustainable design. Further reinforcing my commitment to education, I'm currently enrolled in a Masters of Science program in Learning Technologies and Design at the University of Missouri, Columbia, expected to culminate in December 2024.</p>
+    </section>
+<br>    
+    <section>
     <p><a href=Phillipsresume.pdf>You'll find my resume here.</a></p>
-    <blockquote>
+    <blockquote style="margin-top: 32px">
     <p>"Courage lies on the other side of trying." --Unknown</p>
     </blockquote>
         </section>
@@ -93,11 +84,11 @@ Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
     </main>
 
     <footer>
-        <p>Stephen Phillips
+        <p><small>Stephen Phillips
             <br>
             sbppx2@umsystem.edu  
             <br>
-            &copy; All rights reserved</p>
+            &copy; All rights reserved</small></p>
     </footer>
 </body>
 </html>

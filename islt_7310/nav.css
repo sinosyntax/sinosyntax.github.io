@@ -1,7 +1,7 @@
 nav ul {
     list-style: none;
     position: relative;
-    text-align: right;
+    text-align: center;
     padding: 10px 10px 10px 10px;
     border-bottom: 2px solid black;
 }
@@ -37,4 +37,58 @@ nav ul li:hover > ul {
     font-weight: bold;
   }
 
-
+  @media only screen and (max-width: 767px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-bottom: none;
+    }
+  
+    nav ul.open {
+      display: flex;
+    }
+  
+    nav .menu-toggle {
+      display: block;
+      text-align: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    nav .menu-toggle .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 6px;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul ul {
+      position: static;
+      background-color: transparent;
+    }
+  
+    nav ul li:hover > ul {
+      display: none;
+    }
+    
+    nav .menu-toggle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    
+  }
+  
+  
