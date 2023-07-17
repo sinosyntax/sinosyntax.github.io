@@ -1,5 +1,15 @@
-  body {
-    font-family: "Avenir", sans-serif;
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('fonts/Baskerville.ttf') format('truetype');
+}
+
+body {
+    font-family: "Avenir", "Baskerville" sans-serif;
     margin: 0;
     padding-top: 70px;
     background-size: cover;
@@ -47,7 +57,7 @@
     }
 
     h1, h2 {
-      font-family: "Baskerville", Arial, sans-serif;
+      font-family: "Baskerville", Arial, serif;
       color: black;
       font-weight: bold; 
       max-width: 90%;
@@ -63,9 +73,11 @@
 
   h1 {
     font-size: 2em;
+    font-family: "Baskerville";
   }
 
   p {
+      font-family: "Avenir", Arial, sans-serif; 
       font-size: 18px;
       font-weight: 500;
       color: black;
@@ -245,9 +257,6 @@
   margin: auto;
 }
 
-header {
-  margin-top: 0px;
-}
 
 /* Project Page */
 
@@ -354,7 +363,7 @@ header {
 
     .about-headshot img {
       filter: grayscale(100%);
-      width: 80%;
+      width: 75%;
     }
 
     .after-headshot {
@@ -363,7 +372,7 @@ header {
 
     figure {
       max-width: 20%;
-      margin-top: 50px; /* specify margin for each side individually */
+      margin-top: 50px;
       margin-right: 18px;
       margin-bottom: 10px;
       margin-left: 10px;
@@ -375,3 +384,52 @@ header {
    }
 
   }
+
+
+  @media print {
+  
+  p, ul, blockquote, footer { 
+      font-family: 'Times New Roman', serif; 
+      color: black;
+      font: 10pt; 
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      padding-top: 0
+      
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 12pt;
+    }
+ 
+    h1 {
+      font-family: "Baskerville";
+      font-size: 16pt;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 12pt;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-top: 4px;
+      padding-left: 20px;
+    }
+
+     body {
+      margin: 1in;
+    }
+  
+     .about-headshot img {
+      display: none;
+     }
+
+     main nav {
+      display: none;
+     }
+
+    }
