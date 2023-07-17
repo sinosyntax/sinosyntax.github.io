@@ -9,13 +9,20 @@
 }
 
 body {
+  
     font-family: "Avenir", "Baskerville" sans-serif;
     margin: 0;
     padding-top: 70px;
+  }
+
+  .content-background {
+    background-image: url('interiorsplash.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
   header {
     text-align: left;
@@ -204,6 +211,12 @@ body {
 }
 
   footer {
+    background-image: url('images/footer_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 24px;
+    width: 100%;
     border-top: 1px solid black; 
     text-align: left;
     padding: 20px 0;
@@ -211,8 +224,17 @@ body {
     clear: both;
   }
 
+  footer p {
+    padding-left: 20px;
+  }
 
-                                      /* MOBILE VERSION */
+  .contact-icon {
+    height: 20px;  
+    width: auto; 
+    margin-right: 10px;
+}
+
+   ////////////////////////////// /* MOBILE VERSION */ ////////////////////////////
 
   @media only screen and (max-width: 766px) {
       
@@ -240,21 +262,18 @@ body {
 }
 
 .content-wrapper {
-  width: 85%;
+  width: 100%;
+
 } 
 /* About Me Page */
 
-.about-headshot {
-      width: 60%;
-      height: auto;
-      object-fit: cover;
-    }
+.header-container {
+  flex-direction: column;
+  align-items: center;
+}
 
-.about-headshot img {
-  filter: grayscale(100%);
-  width: 60%;
-  height: auto;
-  margin: auto;
+.about-image {
+  margin-bottom: 20px;
 }
 
 
@@ -342,14 +361,10 @@ body {
       text-indent: 0;
       text-align: left;
     }
-  
-  footer {
-    margin-left: 24px;
-  }
 
 }
 
-/* DESKTOP VERSION */
+///////////////////////////////* DESKTOP VERSION */////////////////////////////
 
   @media only screen and (min-width: 767px) {
     main .header-container {
@@ -357,13 +372,13 @@ body {
       align-items: center;
     }
 
-    .about-headshot {
-      margin-right: 0px; 
+    .about-image {
+      filter: grayscale(100%);
+      width: 60%;
+      height: 20px;
+      margin: 20px;
     }
 
-    .about-headshot img {
-      filter: grayscale(100%);
-      width: 75%;
     }
 
     .after-headshot {
