@@ -1,108 +1,376 @@
- header {
-  border-bottom: none;
- }
- 
- main {
-    position: relative;
-    width: 102%;
-    overflow: hidden;
-  }
-  
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20%;
-  margin-bottom: -20px;
+  body {
+    font-family: "Avenir", sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-figure {
-    position: relative;
-    margin-right: 24px;
-    margin-bottom: 0;
-    height: 100%;
-    z-index: 1;
+  header {
+    text-align: left;
+    padding: 20px;
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    background: #fff;
   }
   
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-h1, h2, p {
-    color: black;
-    font-weight: bold; 
-    max-width: 90%;
-    margin-top: 0;
-    margin-left: 24px;
+  main {
+      position: relative;
+      padding: 20px;
+      width: 100%;  
     }
 
-p {
-    font-size: 18px;
-    font-weight: 500;
-    color: black;
-    text-indent: 24px;
-    border: none;
-    padding: 0;
-  }
-  
-p:first-of-type {
-    text-indent: 0; 
-  }
-
-main section:first-of-type p:first-of-type::first-letter {
-    font-size: 42px;
-    font-weight: bold;
-    color: red;
-  }
-  
-main section blockquote p:first-of-type::first-letter {
-    font-size: initial;
-    font-weight: initial;
-    color: initial;
-    margin-top: 36px;
-}
-
-footer {
-  border-top: 1px solid black; 
-  padding-top: 20px;
-  margin: 0;
-  clear: both;
-}
-
-@media only screen and (max-width: 767px) {
-  main .header-container {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;  
-    padding-top: 24px;
-  }
-  figure {
-      max-width: 40%;
-      margin: 10% 0;
-    }
-    h1 {
-      text-align: center;
-      margin-right: 24px;
-      padding-bottom: 24px;
-    }  
-  p {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  
-    } 
-  
-@media only screen and (min-width: 767px) {
-  main .header-container {
+  .header-container {
+    display: flex;
     flex-direction: row;
-  }
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 24px%;
+    margin-bottom: -20px;
+    }
+
   figure {
-    max-width: 20%;
-    margin: 10%;
-    margin-right: 18px;
+      position: relative;
+      margin-right: 24px;
+      margin-bottom: 0;
+      height: 100%;
+      z-index: 1;
+    }
+    
+  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1, h2 {
+      font-family: "Baskerville", Arial, sans-serif;
+      color: black;
+      font-weight: bold; 
+      max-width: 90%;
+    }
+
+  h1, h2, p {
+      color: black;
+      font-weight: bold; 
+      max-width: 90%;
+      margin-top: 0;
+
+      }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+      text-indent: 24px;
+      border: none;
+      padding: 0;
+    }
+    
+  p:first-of-type {
+      text-indent: 0; 
+    }
+
+  main section:first-of-type p:first-of-type::first-letter {
+      font-size: 42px;
+      font-weight: bold;
+      color: red;
+    }
+    
+  main section blockquote p:first-of-type::first-letter {
+      font-size: initial;
+      font-weight: initial;
+      color: initial;
+      margin-top: 36px;
+  }
+
+  /* INDEX PAGE */
+
+.index-body h1, .index-body h2, .index-body p {
+    color: white;
+    position: relative; /* text overlay */
+    z-index: 1;
+    width: 45%;
+} 
+
+.index-body p {
+  font-size: 13pt;
+}
+
+.content-wrapper {
+  background-color: rgba(0, 0, 0, 0.6); /* 50% opacity */
+  color: white;  
+  position: relative; 
+  padding: 20px;
+  width: 100%;
+}
+
+  /* PROJECT PAGE */
+
+  .project-header {
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px; 
+    padding: 20px; 
+    margin: 0 100px;
+}
+
+.grid-item {
+    border: 1px solid #ccc; /* grid background */
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    min-height: 200px;
+    max-height: 300px; 
+    overflow: auto;
+    background-color: black;
+    color: white;
+    }
+
+
+    .grid-item h1, .grid-item h2, .grid-item p {
+      text-align: center;
+      color: white;
+  }
+
+.grid-item img {
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.grid-item p {
+    padding: 10px; /
+}
+
+/* REFLECTION PAGE */
+
+.reflection-layout {
+  display: flex;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.right-section img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 24px;
+}
+
+  footer {
+    border-top: 1px solid black; 
+    text-align: left;
+    padding: 20px 0;
+    margin: 0;
+    clear: both;
+  }
+
+
+                                      /* MOBILE VERSION */
+
+  @media only screen and (max-width: 766px) {
+      
+    
+    main .header-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+
+    /* Index Page */
+
+.index-body h1, .index-body h2, .index-body p {
+    color: white;
+    position: relative; /* text overlay */
+    z-index: 1;
+    width: 100%;;
+}
+
+.index-body h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  width: 85%;
+} 
+/* About Me Page */
+
+.about-headshot {
+      width: 60%;
+      height: auto;
+      object-fit: cover;
+    }
+
+.about-headshot img {
+  filter: grayscale(100%);
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+header {
+  margin-top: 0px;
+}
+
+/* Project Page */
+
+    .project-header {
+      margin: auto;
+      text-align: center;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+  }
+
+
+  #img1 { order: 1; }
+  #desc3 { order: 2; }
+  #img3 { order: 3; }
+  #desc1 { order: 4; }
+  #img2 { order: 5; }
+  #desc4 { order: 6; }
+  #img4 { order: 7; }
+  #desc2 { order: 8; }
+
+    .grid-item {
+      height: 200px;
+    }
+
+  .grid-item img {
+    max-width: 150%;
+}
+
+    /* Reflection Page */
+    /* Content is stacking vertically */  
+    .reflection-layout {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-top: 0;
+  }
+
+  .reflection-image {
+    width: 90%;
+    margin: 10px 10px;
+    padding-bottom: 24px;
+    display: block;
+  }
+  
+  /* Image centered at top */
+
+  .right-section {
+    order: 2;
+    align-items: center;
+  }
+
+  /* Text is centered underneath the image */
+  .left-section {
+      text-align: left;
+      order: 3;
+      align-items: flex-start;
+      padding-left: 24px;
+  }
+      
+  .left-section h1 {
+    text-align: center;
+    font-size: 2em;
+ }
+
+    figure {
+        max-width: 100%;
+        margin: 10% auto;
+      }
+
+      h1, h2 {
+        text-align: center;
+        padding-bottom: 0;
+      }  
+
+    p {
+      font-size: 16px;
+      margin-left: 0;
+      margin-right: 0;
+      text-indent: 0;
+      text-align: left;
+    }
+  
+  footer {
+    margin-left: 24px;
   }
 
 }
+
+/* DESKTOP VERSION */
+
+  @media only screen and (min-width: 767px) {
+    main .header-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .about-headshot {
+      margin-right: 20px; 
+    }
+
+    .about-headshot img {
+      filter: grayscale(100%);
+    }
+
+    .after-headshot {
+      margin-top: 40px;
+    }
+
+    figure {
+      max-width: 20%;
+      margin-top: 50px; /* specify margin for each side individually */
+      margin-right: 18px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+
+   h1, h2, p, footer {
+    margin-left: 24px;
+   }
+
+  }

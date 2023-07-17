@@ -1,57 +1,71 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<!--
-*****************************************************************************
+    <!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+    <!--
+    *****************************************************************************
 
-Title:  Projects Page
+    Title:  Projects Page
 
-Use:  Introduces grid to introduce select projects.
+    Use:  Introduces grid to introduce select projects.
 
-Author:  Stephen Phillips
+    Author:  Stephen Phillips
 
-School/Term:  University of Missouri, Summer 2023
+    School/Term:  University of Missouri, Summer 2023
 
-Developed: July 1, 2023
+    Developed: July 1, 2023
 
-Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
+    Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
 
-******************************************************************************
--->
-    <meta charset="utf-8">
-    <title>My Projects</title>
-    <meta name="description" content="My Projects">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
-</head>
-<body>  
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a>
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href=#contact.html>Contact</a></li>
-        </ul>
-    </nav>  
-    <!-- This is the comment header for my Projects Page -->
-    <header>
-        <h1>Welcome to my digital portfolio!</h1>
-    </header>
-    <main>          
-    </main>
-    <footer>  
-        <p>Stephen Phillips
-            <br>
-            sbppx2@umsystem.edu  
-            <br>
-            &copy; All rights reserved</p>  
-    </footer>
-</body>
-</html>
+    ******************************************************************************
+    --> 
+        <meta charset="utf-8">
+        <title>My Projects</title>
+        <meta name="description" content="My Projects">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>  
+        <nav>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>  
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href=#contact.html>Contact</a></li>
+            </ul>
+        </nav>  
+        <!-- This is the comment header for my Projects Page -->
+            <h1 class="project-header">Select Projects</h1>
+        <main>
+            <div class="grid-container">
+                <div class="grid-item" id="img1"><img src="som1project.jpg" alt="Image 1"></div>
+                <div class="grid-item" id="desc1"><p>Cafe Build Description</p></div>
+                <div class="grid-item" id="img2"><img src="som2project.jpg" alt="Image 2"></div>
+                <div class="grid-item" id="desc2"><p>Acrobats of China Description</p></div>
+                <div class="grid-item" id="desc3"><p>SOM Business Plan Description</p></div>
+                <div class="grid-item" id="img3"><img src="cafebuildproject.jpg" alt="Image 3"></div>
+                <div class="grid-item" id="desc4"><p>Tianjin Binhai Description</p></div>
+                <div class="grid-item" id="img4"><img src="aocproject.jpg" alt="Image 4"></div>
+            </div>           
+        </main>
+        <footer>
+            <p><small>Stephen Phillips
+                <br>
+                sbppx2@umsystem.edu  
+                <br>
+                &copy; All rights reserved</small></p>
+        </footer>
+    </body>
+    </html>

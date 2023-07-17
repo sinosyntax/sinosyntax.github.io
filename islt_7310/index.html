@@ -22,11 +22,17 @@ Tested:  July 2, 2023; Passed on Chrome and browsers.
     <meta charset="utf-8">
     <title>Home Page</title>
     <meta name="description" content="Home Page">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">     
 </head>
-<body>
+<body class="index-body" style="background-image: url('interiorsplash.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
     <nav>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>  
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -41,12 +47,12 @@ Tested:  July 2, 2023; Passed on Chrome and browsers.
             <li><a href=#contact.html>Contact</a></li>
         </ul>
     </nav>
-    <!-- This is the comment header for my Home Page -->
-    <header>
-    <h1>Welcome to my portfolio page!</h1>
-    <h2>Take a moment to explore these pages and get to know me better.</h2>
-    </header>
+
+  
     <main>
+    <div class="content-wrapper">
+    <h1 style="margin-top: 48px; color: white;">Welcome to my portfolio</h1>
+    <h2>Take a moment to explore these pages to know me better.</h2>
     <p>I have created this space to showcase my commitment to continuous learning and professional growth. The goal is to highlight my versatile professional background, skills, and experience across multiple industries and domains. Here you'll find a select portfolio that demonstrates my drive for excellence, and my desire to exceed expectations for each client and project. 
     <br>
     <br>
@@ -55,14 +61,15 @@ Tested:  July 2, 2023; Passed on Chrome and browsers.
     <br>            
     Overall, my aim is to develop a portfolio that remains accessible, inclusive and informative to all readers. To achieve this, I intend to consistently update and expand the content of these pages. 
     </p>
-</main>
-<footer>  
-    <br>    
-    <p>Stephen Phillips
+    </div>
+    </main>
+
+<footer>
+    <p><small>Stephen Phillips
         <br>
         sbppx2@umsystem.edu  
         <br>
-        &copy; All rights reserved</p>  
+        &copy; All rights reserved</small></p>
 </footer>
 </body>
 </html>
