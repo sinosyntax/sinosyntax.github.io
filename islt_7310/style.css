@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Avenir';
-  src: url('fonts/Avenir.ttf') format('truetype');
+  font-family: "Avenir";
+  src: url("fonts/Avenir.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: url('fonts/Baskerville.ttf') format('truetype');
+  font-family: "Baskerville";
+  src: url("fonts/Baskerville.ttf") format('truetype');
 }
 
 body {
