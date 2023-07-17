@@ -349,15 +349,16 @@ header {
     }
 
     .about-headshot {
-      margin-right: 20px; 
+      margin-right: 0px; 
     }
 
     .about-headshot img {
       filter: grayscale(100%);
+      width: 80%;
     }
 
     .after-headshot {
-      margin-top: 40px;
+      margin-top: 60px;
     }
 
     figure {
