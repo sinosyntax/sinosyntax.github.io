@@ -10,7 +10,7 @@
 
 body {
   
-    font-family: "Avenir", "Baskerville" sans-serif;
+    font-family: "Avenir", "Baskerville", sans-serif;
     margin: 0;
     padding-top: 70px;
   }
@@ -45,8 +45,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 24px%;
-    margin-bottom: -20px;
+    padding-left: 24px;
     }
 
   figure {
@@ -144,7 +143,6 @@ body {
     grid-template-rows: 1fr 1fr;
     gap: 5px; 
     padding: 20px; 
-    margin: 0 100px;
 }
 
 .grid-item {
@@ -176,7 +174,7 @@ body {
 }
 
 .grid-item p {
-    padding: 10px; /
+    padding: 10px;
 }
 
 /* REFLECTION PAGE */
@@ -234,10 +232,9 @@ body {
     margin-right: 10px;
 }
 
-   ////////////////////////////// /* MOBILE VERSION */ ////////////////////////////
+   /******************  MOBILE VERSION *****************/
 
-  @media only screen and (max-width: 766px) {
-      
+  @media only screen and (max-width: 768px) {
     
     main .header-container {
       flex-direction: column;
@@ -273,7 +270,12 @@ body {
 }
 
 .about-image {
+  width: 150px;
   margin-bottom: 20px;
+}
+
+p {
+  padding-left: 24px;
 }
 
 
@@ -285,10 +287,20 @@ body {
     }
 
     .grid-container {
-      display: flex;
-      flex-direction: column;
-      margin: 0 10px;
-  }
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-gap: 5px;
+      padding: 20px;
+    }
+  
+    .grid-item img {
+      width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 0;
+  max-height: none;
+    }  
 
 
   #img1 { order: 1; }
@@ -303,10 +315,6 @@ body {
     .grid-item {
       height: 200px;
     }
-
-  .grid-item img {
-    max-width: 150%;
-}
 
     /* Reflection Page */
     /* Content is stacking vertically */  
@@ -364,7 +372,7 @@ body {
 
 }
 
-///////////////////////////////* DESKTOP VERSION */////////////////////////////
+/***************** DESKTOP VERSION *****************/
 
   @media only screen and (min-width: 767px) {
     main .header-container {
@@ -374,11 +382,7 @@ body {
 
     .about-image {
       filter: grayscale(100%);
-      width: 60%;
-      height: 20px;
       margin: 20px;
-    }
-
     }
 
     .after-headshot {
