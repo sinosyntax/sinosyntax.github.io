@@ -9,10 +9,9 @@
 }
 
 body {
-  
     font-family: "Avenir", "Baskerville", sans-serif;
     margin: 0;
-    padding-top: 70px;
+    padding-top: 10px;
   }
 
   .content-background {
@@ -26,9 +25,8 @@ body {
 
   header {
     text-align: left;
-    padding: 20px;
+    padding: 0px;
     border-bottom: none;
-    position: sticky;
     top: 0;
     z-index: 1001;
     background: #fff;
@@ -209,7 +207,7 @@ body {
 }
 
   footer {
-    background-image: url('Images/footer_background.png');
+    background-image: url('Images/light beige footer background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -223,13 +221,23 @@ body {
   }
 
   footer p {
-    padding-left: 20px;
+    font-size: 14px;
   }
 
   .contact-icon {
-    height: 20px;  
+    height: 25px;  
     width: auto; 
     margin-right: 10px;
+    position: relative;
+    top: 5px; 
+  }
+
+  .contact-icon {
+    transition: transform 0.3s ease;
+}
+
+  .contact-icon:hover {
+    transform: scale(1.3);
 }
 
    /******************  MOBILE VERSION *****************/
@@ -272,10 +280,6 @@ body {
 .about-image {
   width: 150px;
   margin-bottom: 20px;
-}
-
-p {
-  padding-left: 24px;
 }
 
 
@@ -370,6 +374,10 @@ p {
       text-align: left;
     }
 
+    footer p {
+      margin-left: 24px;
+    }
+    
 }
 
 /***************** DESKTOP VERSION *****************/
