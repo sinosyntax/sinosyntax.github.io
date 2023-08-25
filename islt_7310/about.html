@@ -1,97 +1,110 @@
-    <!DOCTYPE html>
-    <html lang="en-US">
-    <head>
-    <!--
-    *****************************************************************************
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+*****************************************************************************
 
-    Title:  About Page
+Title:  Home Page
 
-    Use:  Page to introduce myself after the Home Page.
+Use:  First Page of my website.
 
-    Author:  Stephen Phillips
+Author:  Stephen Phillips
 
-    School/Term:  University of Missouri, Summer 2023
+School/Term:  University of Missouri, Summer 2023
 
-    Developed: July 1, 2023
+Developed: July 1, 2023
 
-    Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
+Tested:  July 2, 2023; Passed on Chrome and browsers.
 
-    ******************************************************************************
-    -->
-        <meta charset="utf-8">
-        <meta name="description" content="About Me">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
-        <title>About Me</title>
-    </head>
+******************************************************************************
+-->
+<meta charset="utf-8">
+<title>About Me</title>
+<meta name="description" content="About Me">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="icon" href="Images/favicon.png" type="image/png">   
+</head>
     <body>
-    <nav>
-        <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>  
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a>
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href=#contact.html>Contact</a></li>
-        </ul>
-    </nav>
-        
-        <div class="header-container">
-        <figure class="about-image">
-            <img src="aboutmephoto2.png" alt="About Me Image">
-        </figure>
-        <header>
-        <div class="text-container">
-            <h1>Stephen Phillips</h1>
-            <h2>Education</h2>
-                <ul>
-                  <li>University of Oregon, B.A. Asian Studies, 1996</li>
-                </ul>
+        <nav>   
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>          
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="about-me">  
+            <div class="two-columns">
+                <section class="left-column">
+                    <div class="header-container">
+                        <figure class="about-image">
+                            <img src="Images/aboutmephoto1.png" alt="About Me Image">
+                        </figure>
+                            <h1 class="about-me-header">Stephen Phillips</h1>
+                    </div>
+                    <section class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>B.A. Asian Studies, University of Oregon, 1996</li>
+                        <li>M.S. Learning Technologies & Design,<br> University of Missouri
+                            (Expected Fall 2024)</li>
+                    </ul>
+                    </section>
+                    <section class="competencies">
+                        <h2>Core Competencies</h2>
+                        <ul>
+                            <li>Marketing & Technical Communications</li>
+                            <li>Cross-cultural Facilitation and Training</li>
+                            <li>Research and Analysis</li>
+                            <li>Chinese Fluency (Written & Spoken)</li>
+                        </ul>
+                    </section>
+                    <section class="resume">
+                    <p><a href=Assets/Phillipsresume.pdf>You'll find my resume here.</a></p>
+                    </section>
+                </section>
+                
+                <section class="right-column">
+                    <section>
+                    <p>Hello! Feel free to learn a little more about me here.</p>
+                    <p>Growing up in the diverse backdrop of California's Bay Area, I had the privilege to connect with many different cultures and values. A budding interest in music and the humanities shaped my worldview early on. Opportunities to travel and perform instilled in me a deep appreciation for the arts and education. 
+                    </p>
+                    </section>
+                    <section>
+                    <p>These experiences soon led me to become the first of my family to attend college. Guided by interests in world literatures and music, I focused my studies on the history, culture and language of China. What followed was a dynamic, two-decade career navigating the professional waves of Silicon Valley and East Asia. Especially influential was my decade-long residency in Shanghai, where I took on a number of rewarding projects mainly for architecture, design and environmental firms.</p>
+                    </section>
+                    <section>
+                    <p>Now, my professional interests have evolved toward instructional design, learning technologies, and associated fields. I have a inherent passion for cross-cultural training, adaptive learning systems,  and the promotion of smart, sustainable design. Further reinforcing my commitment to education, I'm currently enrolled in a Masters of Science program in Learning Technologies and Design at the University of Missouri, Columbia, which I expect to complete in the Fall of 2024.</p>
+                    </section>
+                    <section>
+                    <blockquote>
+                        <p>"Courage rests on the other side of trying." --Unknown</p>
+                    </blockquote>
+                </section>
             </div>
-        </header>
-        </div>
-
-        <section>
-        <p class="after-headshot"></p>
-        <p>Take a moment to learn a bit more about me, including my interests, career progression, and the experiences that continue to inspire me.</p>
-        </section>
-        <section>
-        <p>Growing up in California's culturally diverse Bay Area, I was fortunate to be surrounded by a myriad of cultures and values. A budding interest in music and the humanities quickly grew, broadening my worldview and instilling in me a deep appreciation for arts education.
-        </p>
-            </section>
-            <section>
-        <p>This exposure sparked a lifelong passion for learning and led me to become the first of my family to attend college. My focus was on East Asian Studies, particularly China, guided by explorations into world literature and music. These studies served as a springboard for a dynamic, two-decade career that took me from Silicon Valley to Asia. My decade-long residency in Shanghai was particularly influential, where I leveraged my skills mainly in marketing and communications for architectural and environmental firms.</p>
-            </section>
-            <section>
-        <p>Now, my professional interests have evolved towards instructional design and associated fields. I have a growing passion for cross-cultural training, innovative adaptive learning methodologies, and the promotion of sustainable design. Further reinforcing my commitment to education, I'm currently enrolled in a Masters of Science program in Learning Technologies and Design at the University of Missouri, Columbia, expected to culminate in December 2024.</p>
-        </section>
-    <br>    
-        <section>
-        <p><a href=Phillipsresume.pdf>You'll find my resume here.</a></p>
-        <blockquote style="margin-top: 32px">
-        <p>"Courage lies on the other side of trying." --Unknown</p>
-        </blockquote>
-            </section>
-
         </main>
 
-        <footer>
-            <p><small>Stephen Phillips
-                <br>
-                sbppx2@umsystem.edu  
-                <br>
-                &copy; All rights reserved</small></p>
-        </footer>
+    <footer>
+        <p>
+            <a style="display: inline-block" href="mailto:sbppx2@umsystem.edu">
+            <img class="contact-icon" src="Images/email_icon.png" alt="Email Icon">sbppx2@umsystem.edu
+            </a>
+            <br>
+            <span class="phone-number">
+            <img class="contact-icon" src="Images/phone_icon.png" alt="Phone Icon">(417) 365-2823
+            </span>
+            <br>
+            Copyright &copy; 2023 | Stephen Phillips | All Rights Reserved
+        </p>  
+    </footer>
     </body>
     </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+*****************************************************************************
+
+Title:  Home Page
+
+Use:  First Page of my website.
+
+Author:  Stephen Phillips
+
+School/Term:  University of Missouri, Summer 2023
+
+Developed: July 1, 2023
+
+Tested:  July 2, 2023; Passed on Chrome and browsers.
+
+******************************************************************************
+-->
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="description" content="Contact Me">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="Images/favicon.png" type="image/png">     
+</head>
+<body>
+    <nav>
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>          
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    
+    <main class="contact-page">
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Thanks for your interest in reaching out. 
+                <br>
+                <br>
+                Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you.
+                <br>
+                <br>
+                Please fill in your info and message in the space provided.
+                <br>
+                <br>
+                Once you click submit, your inquiry will be sent directly to me.</p>
+            </div>
+            
+            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="comment">Message:</label>
+                <textarea id="comment" name="comment" rows="8" required></textarea>
+
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>
+            <a style="display: inline-block" href="mailto:sbppx2@umsystem.edu">
+            <img class="contact-icon" src="Images/email_icon.png" alt="Email Icon">sbppx2@umsystem.edu
+            </a>
+            <br>
+            <span class="phone-number">
+            <img class="contact-icon" src="Images/phone_icon.png" alt="Phone Icon">(417) 365-2823
+            </span>
+            <br>
+            Copyright &copy; 2023 | Stephen Phillips | All Rights Reserved
+        </p>  
+    </footer>
+</body>
+</html>

@@ -1,71 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="en-US">
-    <head>
-    <!--
-    *****************************************************************************
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+*****************************************************************************
 
-    Title:  Projects Page
+Title:  Home Page
 
-    Use:  Introduces grid to introduce select projects.
+Use:  First Page of my website.
 
-    Author:  Stephen Phillips
+Author:  Stephen Phillips
 
-    School/Term:  University of Missouri, Summer 2023
+School/Term:  University of Missouri, Summer 2023
 
-    Developed: July 1, 2023
+Developed: July 1, 2023
 
-    Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
+Tested:  July 2, 2023; Passed on Chrome and browsers.
 
-    ******************************************************************************
-    --> 
-        <meta charset="utf-8">
-        <title>My Projects</title>
-        <meta name="description" content="My Projects">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
-    </head>
-    <body>  
-        <nav>
-            <div class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>  
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a>
-                    <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
-                    </ul>
-                </li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href=#contact.html>Contact</a></li>
-            </ul>
-        </nav>  
-        <!-- This is the comment header for my Projects Page -->
+******************************************************************************
+-->
+    <meta charset="utf-8">
+    <title>Project Page</title>
+    <meta name="description" content="Select Projects">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="Images/favicon.png" type="image/png">  
+    <script defer src="projects.js"></script>   
+</head>
+<body>
+    <nav>
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>          
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        <main class="project-page">
             <h1 class="project-header">Select Projects</h1>
-        <main>
-            <div class="grid-container">
-                <div class="grid-item" id="img1"><img src="som1project.jpg" alt="Image 1"></div>
-                <div class="grid-item" id="desc1"><p>Cafe Build Description</p></div>
-                <div class="grid-item" id="img2"><img src="som2project.jpg" alt="Image 2"></div>
-                <div class="grid-item" id="desc2"><p>Acrobats of China Description</p></div>
-                <div class="grid-item" id="desc3"><p>SOM Business Plan Description</p></div>
-                <div class="grid-item" id="img3"><img src="cafebuildproject.jpg" alt="Image 3"></div>
-                <div class="grid-item" id="desc4"><p>Tianjin Binhai Description</p></div>
-                <div class="grid-item" id="img4"><img src="aocproject.jpg" alt="Image 4"></div>
-            </div>           
+                <div class="grid-container">
+                    <div class="grid-item pair1" id="img1">
+                        <img src="Images/Projects/SOMBP/som1project.jpg" alt="Image 1">
+                    </div>
+                    <div class="grid-item pair2 desc" id="desc1">
+                        <div class="desc-inner">
+                        <p class="title">Fatty's Fresh Cafe</p>
+                        <p class="description">Led development of this boutique cafe on coastal Shanghai, the fulfillment of an aspiration to bring together my love for cooking and spaces that encourage comfort and curiosity. My role was end-to-end implementation spanning project management, business planning, conceptual design, coordination with interior design experts and contractors, menu and recipe formulation, ingredient sourcing, staff training, and cafe operations.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="grid-item pair3" id="img2">
+                        <img src="Images/Projects/Tianjin/tianjincover1.jpg" alt="Image 2">
+                    </div>
+                    <div class="grid-item pair4 desc" id="desc2">
+                        <div class="desc-inner">
+                        <p class="title">Acrobats of China Promo</p>
+                        <p class="description">This exciting project involved creating a 2-minute promotional video for a nationally-recognized Chinese acrobatic theater troupe. My role focused on orchestrating a multi-camera recording of a live performance, followed by development of a video montage of performance highlights integrated with original graphics, arranged music, and published accolades,resulting in a visual showcase underscoring the troupe's refined artistry and acclaim.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="grid-item pair1 desc" id="desc3">
+                        <div class="desc-inner">
+                        <p class="title">SOM Business Plan</p>
+                        <p class="description">This project came with the responsibility to spearhead the authoring, development, and refinement of critical plan components for the China division of a world-renowned architecture and urban design firm. Collaborating closely with studio leadership and design experts, the project underscores my aptitude for strategic writing, market research, and project coordination.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item pair2" id="img3">
+                        <img src="Images/Projects/Cafe/cafeplan1.jpg" alt="Image 3">
+                    </div>
+                    <div class="grid-item pair3 desc" id="desc4">
+                        <div class="desc-inner">
+                        <p class="title">Tianjin Binhai Master Plan</p>
+                        <p class="description">This project for the Tianjin Binhai New Area Master Plan and its feature in Time+Architecture magazine highlights my diverse contribution. Responsibilities spanned market research, content development, and design collaboration. I undertook market and geographical analyses, authored the magazine feure and several project book sections in close coordination with studio leaders, graphic designers, and publishers.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="grid-item pair4" id="img4">
+                        <img src="Images/Projects/Acrobats/aocproject.jpg" alt="Image 4">
+                    </div>
+                </div>
+                    
         </main>
+
         <footer>
-            <p><small>Stephen Phillips
+            <p>
+                <a style="display: inline-block" href="mailto:sbppx2@umsystem.edu">
+                <img class="contact-icon" src="Images/email_icon.png" alt="Email Icon">sbppx2@umsystem.edu
+                </a>
                 <br>
-                sbppx2@umsystem.edu  
+                <span class="phone-number">
+                <img class="contact-icon" src="Images/phone_icon.png" alt="Phone Icon">(417) 365-2823
+                </span>
                 <br>
-                &copy; All rights reserved</small></p>
+                Copyright &copy; 2023 | Stephen Phillips | All Rights Reserved
+            </p>  
         </footer>
-    </body>
-    </html>
+
+     <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" id="closeLightbox">&times;</span>
+            <span class="nav-arrow left" id="prev">&#10094;</span>
+            <img class="lightbox-image" id="lightboxImage">
+            <div id="lightboxVideo"></div>
+            <span class="nav-arrow right" id="next">&#10095;</span>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+</body>
+</html>

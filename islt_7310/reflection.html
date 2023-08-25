@@ -4,9 +4,9 @@
 <!--
 *****************************************************************************
 
-Title:  Reflection Page
+Title:  Home Page
 
-Use:  Reflect my overall vision and career goals.
+Use:  First Page of my website.
 
 Author:  Stephen Phillips
 
@@ -14,7 +14,7 @@ School/Term:  University of Missouri, Summer 2023
 
 Developed: July 1, 2023
 
-Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
+Tested:  July 2, 2023; Passed on Chrome and browsers.
 
 ******************************************************************************
 -->
@@ -24,53 +24,60 @@ Tested:  July 2, 2023; Passed on Chrome and Safari browsers.
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="Images/favicon.png" type="image/png"> 
 </head>
 <body>
     <nav>
-        <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>  
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a>
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href=#contact.html>Contact</a></li>
-        </ul>
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>          
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
     </nav>
 
-    <main class="reflection-layout">  <!-- Layout for my reflection page -->
-            <section class="left-section">
-            <h1>Gateway to Change</h1>
-            <h2>Cultural Connection Nurtures Growth</h2>
+    <main class="reflection-layout">  
+        <section class="left-section">
+        <h1>Gateway to Change</h1>
+        <h2>Cultural Connection Nurtures Growth</h2>
 
-        <p>I believe my diverse educational and professional background offers a unique perspective that influences all my work. My immersion into Asian and Latin cultures early in my life has deepened my appreciation of the traditions and values that motivate educators and learners from all walks of life. My passion for music and the humanities has matured into a profound admiration for creative learning and design excellence. </p>
+        <p>I believe my diverse educational and professional background offers a unique perspective that influences all my work. My immersion into Asian and Latin cultures early in my life has deepened my appreciation for diverse traditions and values. My love for music and humanities has evolved into a respect for creative learning and design.</p>
 
-        <p>Throughout my career, I have had the opportunity to work with several global technology and design firms. These experiences have given me a deep respect for the principles and methodologies that drive multi-disciplinary project teams. The privilege of serving top-notch architecture and environmental firms in China has played a critical role in shaping this perspective. It has also positioned me as a strong advocate for design strategies that not only respond to the evolving needs of users but forge meaningful relationships with clients.</p>
+        <p>Throughout my career, I have had the opportunity to collaborate with global tech and design firms, gaining insights from working with top architecture and environmental firms in China. These experiences have taught me the importance of design that meets user needs and builds strong client relationships.</p>
+        
+        <a href="#" id="moreLink">More</a>
+        <div class="hidden-content">
+        <p>These experiences have also instilled a mindset that drives me to refine my skills, focusing on inclusivity and impactful solutions. I am especially energized by projects that allow me to exercise this mindset across arts education, healthcare, architecture and sustainble urban design.</p>
 
-        <p>This mindset motivates me to continually sharpen my skills and deliver exceptional results. I am dedicated to inclusivity and best practices, and work to deliver transformative solutions that align with the needs of clients and end-users. Collaborative projects that span arts education, healthcare, architecture, urban design, and environmental sustainability particularly energize me.</p>
-
-        <p>Overall I aim to be a gateway to change, bringing an astute eye and a blend of creative, technical, and communication skills that empower me think critically and strategically. Dedicated to making a lasting impact, I strive to leverage my unique experience and expertise to respond to a rapidly-evolviing and interconnected world. </p> 
-            </section>
+        <p>Today I aim to be a catalyst for change, blending creativity, technical know-how, and a unique lens on the world to help make better sense and better use of a complex and interconnected world. </p> 
+        </div>
+      </section>
 
         <section class="right-section">
-            <img class="reflection-image" src="phonereflection.jpeg" alt="Phone Reflection">
+            <img class="reflection-image" src="Images/phonereflection.jpeg" alt="Phone Reflection">
         </section>
     </main>
+    
     <footer>
-        <p><small>Stephen Phillips
+        <p>
+            <a style="display: inline-block" href="mailto:sbppx2@umsystem.edu">
+            <img class="contact-icon" src="Images/email_icon.png" alt="Email Icon">sbppx2@umsystem.edu
+            </a>
             <br>
-            sbppx2@umsystem.edu  
+            <span class="phone-number">
+            <img class="contact-icon" src="Images/phone_icon.png" alt="Phone Icon">(417) 365-2823
+            </span>
             <br>
-            &copy; All rights reserved</small></p>
+            Copyright &copy; 2023 | Stephen Phillips | All Rights Reserved
+        </p>  
     </footer>
+    <script defer src="reflection.js"></script>    
+
 </body>
 </html>
