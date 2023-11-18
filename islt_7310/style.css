@@ -133,7 +133,7 @@
 } 
 
 .index-body p {
-  font-size: 13pt;
+  font-size: 36px;
   color: white;
   z-index: 1;
   width: 40%;
@@ -144,6 +144,7 @@
 
 .index-body h1 {
   padding-top: 48px;
+  font-size: 42px;
 } 
 
 .content-background {
@@ -600,20 +601,20 @@ main {
 }
 
 .content-wrapper h1 {
-  margin-left: 20px;   /* Adjust this value to set the left margin */
-  margin-right: 20px;  /* Adjust this value to set the right margin */
+  margin-left: 20px;   
+  margin-right: 20px;  
 }
 
 .content-wrapper p {
-  margin-left: 30px;   /* Adjust this value to set the left margin */
-  width: 85%;  /* Adjust this value to set the right margin */
+  margin-left: 30px;  
+  width: 85%;  
 }
 
 
 /* About Me Page */
 
 .two-columns {
-  flex-direction: column;  /* Stack the columns vertically */
+  flex-direction: column;  /* Stacks the columns vertically */
 }
 .left-column, .right-column {
   width: 100%;  
@@ -625,7 +626,7 @@ main {
 }
 
 .header-container {
-  margin-left: 0;  /* Remove any left margin */
+  margin-left: 0;  
 }
 
 .about-me {
@@ -892,7 +893,6 @@ h1, h2, p {
 }
 
 }
-
 
 
 @media print {
