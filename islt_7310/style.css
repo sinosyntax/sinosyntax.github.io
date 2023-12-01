@@ -133,7 +133,7 @@
 } 
 
 .index-body p {
-  font-size: 24px;
+  font-size: 13pt;
   color: white;
   z-index: 1;
   width: 40%;
@@ -143,8 +143,7 @@
 }
 
 .index-body h1 {
-  padding-top: 32px;
-  font-size: 42px;
+  padding-top: 48px;
 } 
 
 .content-background {
